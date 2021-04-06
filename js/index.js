@@ -51,6 +51,21 @@ navAll[3].textContent = siteContent["nav"]["nav-item-4"];
 navAll[4].textContent = siteContent["nav"]["nav-item-5"];
 navAll[5].textContent = siteContent["nav"]["nav-item-6"];
 
+navAll[0].style.color = "green";
+navAll[1].style.color = "green";
+navAll[2].style.color = "green";
+navAll[3].style.color = "green";
+navAll[4].style.color = "green";
+navAll[5].style.color = "green";
+// navAll.forEach(navAll.style.color = "green");
+// navAll.child.forEach(navAll => navLink.style.color = 'green');
+// document.getElementByClass("nav").style.color = "green";
+
+// var append = document.createElement("append");                
+// var textappend = document.createTextNode("Append");        
+// node.appendChild(textappend);                            
+// navAll.appendChild(append); 
+
 // cta img
 let ctaImg = document.getElementById("cta-img");
 ctaImg.setAttribute("src", siteContent["cta"]["img-src"]);
