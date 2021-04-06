@@ -44,12 +44,12 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 // Nav
 let navAll = document.querySelectorAll("nav > a");
-navAll[0].textContent = siteContent["nav"]["nav-link-1"];
-navAll[1].textContent = siteContent["nav"]["nav-link-2"];
-navAll[2].textContent = siteContent["nav"]["nav-link-3"];
-navAll[3].textContent = siteContent["nav"]["nav-link-4"];
-navAll[4].textContent = siteContent["nav"]["nav-link-5"];
-navAll[5].textContent = siteContent["nav"]["nav-link-6"];
+navAll[0].textContent = siteContent["nav"]["nav-item-1"];
+navAll[1].textContent = siteContent["nav"]["nav-item-2"];
+navAll[2].textContent = siteContent["nav"]["nav-item-3"];
+navAll[3].textContent = siteContent["nav"]["nav-item-4"];
+navAll[4].textContent = siteContent["nav"]["nav-item-5"];
+navAll[5].textContent = siteContent["nav"]["nav-item-6"];
 
 // cta img
 let ctaImg = document.getElementById("cta-img");
@@ -61,8 +61,32 @@ ctaText.textContent = siteContent["cta"]["h1"]
 
 let ctaButton = document.querySelector("button");
 ctaButton.textContent = siteContent["cta"]["button"]
-// main content
 
+// main content headings
+let mainHead = document.querySelectorAll(".main-content h4");
+mainHead[0].textContent = siteContent["main-content"]["features-h4"];
+
+mainHead[1].textContent = siteContent["main-content"]["about-h4"];
+
+mainHead[2].textContent = siteContent["main-content"]["services-h4"];
+
+mainHead[3].textContent = siteContent["main-content"]["product-h4"];
+
+mainHead[4].textContent = siteContent["main-content"]["vision-h4"];
+
+// main content text
+let mainText = document.querySelectorAll(".main-content p")
+mainText[0].textContent = siteContent["main-content"]["features-content"];
+
+mainText[1].textContent = siteContent["main-content"]["about-h4"];
+
+mainText[2].textContent = siteContent["main-content"]["services-content"];
+
+mainText[3].textContent = siteContent["main-content"]["product-content"];
+
+mainText[4].textContent = siteContent["main-content"]["vision-content"];
+
+// middle img
 let middleImg = document.getElementById("middle-img");
 middleImg.setAttribute("src", siteContent["main-content"]["middle-img-src"]);
 
