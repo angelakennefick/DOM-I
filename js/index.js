@@ -44,20 +44,23 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 // Nav
 let navAll = document.querySelectorAll("nav > a");
-navAll[0].textContent = siteContent["nav"]["nav-link-0"];
-navAll[1].textContent = siteContent["nav"]["nav-link-1"];
-navAll[2].textContent = siteContent["nav"]["nav-link-2"];
-navAll[3].textContent = siteContent["nav"]["nav-link-3"];
-navAll[4].textContent = siteContent["nav"]["nav-link-4"];
-navAll[5].textContent = siteContent["nav"]["nav-link-5"];
+navAll[0].textContent = siteContent["nav"]["nav-link-1"];
+navAll[1].textContent = siteContent["nav"]["nav-link-2"];
+navAll[2].textContent = siteContent["nav"]["nav-link-3"];
+navAll[3].textContent = siteContent["nav"]["nav-link-4"];
+navAll[4].textContent = siteContent["nav"]["nav-link-5"];
+navAll[5].textContent = siteContent["nav"]["nav-link-6"];
 
 // cta img
 let ctaImg = document.getElementById("cta-img");
 ctaImg.setAttribute("src", siteContent["cta"]["img-src"]);
 
 // cta text
+let ctaText = document.querySelector("h1");
+ctaText.textContent = siteContent["cta"]["h1"]
 
-
+let ctaButton = document.querySelector("button");
+ctaButton.textContent = siteContent["cta"]["button"]
 // main content
 
 let middleImg = document.getElementById("middle-img");
